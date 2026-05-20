@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "omb-agent",
+    "fullName": "Agent-Driven Orchestration Platform",
+    "description": "A multi-agent orchestration platform that coordinates AI agents — built with AutoGen and CrewAI. It integrates with n8n for workflow automation, Dify for RAG pipelines, and Telegram for conversational interfaces. The platform manages AI agents as composable skills with semantic routing.",
+    "url": "https://github.com/vespexx/omb-agent",
+    "language": "Python",
+    "highlights": [
+      "Multi-agent orchestration with AutoGen and CrewAI",
+      "Skill-based architecture with semantic routing",
+      "Integration with n8n, Dify, Telegram, and Qdrant",
+      "Dockerized deployment with CI/CD pipeline"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "tg-scheduler",
+    "fullName": "Telegram Scheduling & Automation",
+    "description": "A Telegram-based scheduling bot that connects messaging with Google services (Calendar, Sheets) and custom data pipelines. Handles automated notifications, event scheduling, and data logging through natural language commands.",
+    "url": "https://github.com/vespexx/tg-sheduler",
+    "language": "Python",
+    "highlights": [
+      "Natural language command processing via Telegram",
+      "Google Calendar and Google Sheets integration",
+      "Automated notifications and reminders",
+      "Production-ready Docker deployment"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "tgkart2googlph",
+    "fullName": "Telegram Cart → Google Photos Pipeline",
+    "description": "An automation pipeline that forwards media from Telegram forwarded messages to Google Photos, creating an organized photo backup system with metadata preservation.",
+    "url": "https://github.com/vespexx/tgkart2googlph",
+    "language": "Python",
+    "highlights": [
+      "Telegram message scraping and media extraction",
+      "Google Photos API integration for backup",
+      "Metadata preservation and organization",
+      "Containerized with Docker Compose"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "garmin2googlesheet",
+    "fullName": "Garmin Fitness → Google Sheets Pipeline",
+    "description": "An ETL pipeline that extracts fitness metrics from Garmin Connect and syncs them to Google Sheets for structured analysis and visualization. Enables custom fitness dashboards and trend tracking.",
+    "url": "https://github.com/vespexx/garmin2googlesheet",
+    "language": "Python",
+    "highlights": [
+      "Automated Garmin Connect data extraction",
+      "Google Sheets API integration for structured storage",
+      "Scheduled sync with configurable intervals",
+      "Enables custom fitness analytics and visualization"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "infra-as-code",
+    "fullName": "Infrastructure-as-Code Dev Environment",
+    "description": "A comprehensive Docker-based local development environment for orchestrating production-like infrastructure and application stacks. Manages 15+ services including databases, queues, vector stores, reverse proxy, and watchtower auto-updates — all through version-controlled Docker Compose configurations.",
+    "url": "https://github.com/vespexx/infra-as-code",
+    "language": "PowerShell",
+    "highlights": [
+      "15+ Docker Compose stacks for various services",
+      "Integrated dev-container with VS Code workspace",
+      "Automated secrets management and secret rotation",
+      "GitHub Actions for CI/CD and security scanning"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "hon",
+    "fullName": "Home Assistant Haier hOn Integration",
+    "description": "Home Assistant custom integration for Haier hOn ecosystem — supporting Haier, Candy, and Hoover home appliances in 19 languages. Enables smart home control of washing machines, air conditioners, and more.",
+    "url": "https://github.com/vespexx/hon",
+    "language": "Python",
+    "highlights": [
+      "Multi-brand support (Haier, Candy, Hoover)",
+      "19 language locales",
+      "Home Assistant native integration",
+      "IoT smart home automation"
+    ]
+  }
+]

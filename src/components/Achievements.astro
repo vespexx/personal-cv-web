@@ -1,0 +1,93 @@
+---
+import achievements from '../content/achievements.json';
+---
+
+<section id="achievements" class="section">
+  <div class="container">
+    <div class="section-label animate-in">02 / Impact</div>
+    <h2 class="section-title animate-in animate-in-delay-1">Key Achievements</h2>
+    <p class="section-subtitle animate-in animate-in-delay-2">Projects with measurable outcomes — financial results, automation coverage, and real-world impact.</p>
+
+    <div class="grid-2">
+      {achievements.map((item, i) => (
+        <article class="achievement-card card animate-in" style={`animation-delay: ${0.1 * (i + 1)}s`}>
+          <div class="achievement-card__metric">
+            <span class="achievement-card__value">{item.metric}</span>
+            <span class="achievement-card__label">{item.metricLabel}</span>
+          </div>
+          <h3 class="achievement-card__title">{item.title}</h3>
+          <p class="achievement-card__description">{item.description}</p>
+          <div class="achievement-card__tags">
+            {item.tags.map((tag) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .achievement-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--color-accent-gradient);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+  }
+
+  .achievement-card:hover::before {
+    opacity: 1;
+  }
+
+  .achievement-card__metric {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .achievement-card__value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: var(--color-accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.03em;
+  }
+
+  .achievement-card__label {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .achievement-card__title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .achievement-card__description {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .achievement-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+</style>
