@@ -1,0 +1,152 @@
+---
+import workData from '../content/work.json';
+const { experience } = workData;
+---
+
+<section id="work" class="section section-alt">
+  <div class="container">
+    <div class="section-label animate-in">01 / Experience</div>
+    <h2 class="section-title animate-in animate-in-delay-1">Work Timeline</h2>
+    <p class="section-subtitle animate-in animate-in-delay-2">A journey through engineering leadership, agent-driven development, and system architecture.</p>
+
+    <div class="timeline">
+      {experience.map((exp, i) => (
+        <div class="timeline__item animate-in" style={`animation-delay: ${0.15 * (i + 1)}s`}>
+          <div class="timeline__marker">
+            <div class="timeline__dot"></div>
+            {i < experience.length - 1 && <div class="timeline__line"></div>}
+          </div>
+          <div class="timeline__card card">
+            <div class="timeline__header">
+              <h3 class="timeline__role">{exp.role}</h3>
+              <span class="timeline__period">{exp.period}</span>
+            </div>
+            <p class="timeline__company">{exp.company}</p>
+            <p class="timeline__description">{exp.description}</p>
+            <ul class="timeline__highlights">
+              {exp.highlights.map((h) => (
+                <li class="timeline__highlight">{h}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .timeline__item {
+    display: flex;
+    gap: 24px;
+    position: relative;
+  }
+
+  .timeline__marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 24px;
+    padding-top: 8px;
+  }
+
+  .timeline__dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    border: 3px solid var(--color-bg-alt);
+    box-shadow: 0 0 0 3px var(--color-accent);
+    flex-shrink: 0;
+    z-index: 1;
+  }
+
+  .timeline__line {
+    width: 2px;
+    flex-grow: 1;
+    background: var(--color-border);
+    margin: 4px 0;
+    min-height: 24px;
+  }
+
+  .timeline__card {
+    flex: 1;
+    margin-bottom: 24px;
+  }
+
+  .timeline__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+
+  .timeline__role {
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  .timeline__period {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    white-space: nowrap;
+    padding: 2px 10px;
+    border-radius: var(--radius-sm);
+    background: var(--color-accent-light);
+  }
+
+  .timeline__company {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 12px;
+  }
+
+  .timeline__description {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+  }
+
+  .timeline__highlights {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .timeline__highlight {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .timeline__highlight::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+
+  @media (max-width: 640px) {
+    .timeline__item {
+      gap: 16px;
+    }
+    .timeline__header {
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+</style>

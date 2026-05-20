@@ -1,0 +1,183 @@
+---
+import sports from '../content/sports.json';
+const { athlete, activities, summary, philosophy } = sports;
+---
+
+<section id="sports" class="section">
+  <div class="container">
+    <div class="section-label animate-in">04 / Hobby — Sports</div>
+    <h2 class="section-title animate-in animate-in-delay-1">Endurance & Discipline</h2>
+    <p class="section-subtitle animate-in animate-in-delay-2">{summary}</p>
+
+    <div class="sports-intro animate-in animate-in-delay-1">
+      <div class="sports-intro__avatar">
+        <img src={athlete.profileImage} alt={athlete.name} crossorigin="anonymous" />
+      </div>
+      <div class="sports-intro__info">
+        <h3>{athlete.name}</h3>
+        <p>📍 {athlete.location}</p>
+        <div class="sports-intro__links">
+          <a href={athlete.stravaUrl} target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FC5200"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-3.599l-2.836 5.598H5.66l2.835-5.598 2.836-5.598 2.836 5.598"/></svg>
+            Strava Profile
+          </a>
+          <a href={athlete.garminUrl} target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#007CC3"><path d="M12 2L2 19h20L12 2zm0 4l6 11H6l6-11z"/></svg>
+            Garmin Connect
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-3 animate-in animate-in-delay-2">
+      {activities.map((activity, i) => (
+        <div key={i} class="sport-card card" style={`animation-delay: ${0.1 * (i + 1)}s`}>
+          <div class="sport-card__emoji">{activity.emoji}</div>
+          <h3 class="sport-card__title">{activity.type}</h3>
+          <p class="sport-card__description">{activity.description}</p>
+          <div class="sport-card__stat">
+            <span class="sport-card__stat-value">{activity.stats.value}</span>
+            <span class="sport-card__stat-label">{activity.stats.label}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="sports-philosophy animate-in">
+      <blockquote class="sports-quote">
+        <svg class="sports-quote__icon" width="32" height="32" viewBox="0 0 24 24" fill="var(--color-accent)" opacity="0.3"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
+        <p>{philosophy}</p>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<style>
+  .sports-intro {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 48px;
+    padding: 32px;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+  }
+
+  .sports-intro__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 3px solid var(--color-accent);
+  }
+
+  .sports-intro__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sports-intro__info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+  }
+
+  .sports-intro__info p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+
+  .sports-intro__links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .sports-intro__links .btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .sport-card {
+    text-align: center;
+    padding: 32px 24px;
+  }
+
+  .sport-card__emoji {
+    font-size: 3rem;
+    margin-bottom: 12px;
+  }
+
+  .sport-card__title {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+
+  .sport-card__description {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .sport-card__stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: var(--color-accent-light);
+    border-radius: var(--radius-md);
+  }
+
+  .sport-card__stat-value {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-accent);
+  }
+
+  .sport-card__stat-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .sports-philosophy {
+    margin-top: 48px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sports-quote {
+    position: relative;
+    padding: 32px;
+    text-align: center;
+  }
+
+  .sports-quote__icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sports-quote p {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.8;
+    color: var(--color-text);
+  }
+
+  @media (max-width: 768px) {
+    .sports-intro {
+      flex-direction: column;
+      text-align: center;
+    }
+    .sports-intro__links {
+      justify-content: center;
+    }
+  }
+</style>

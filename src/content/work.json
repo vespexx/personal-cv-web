@@ -1,0 +1,83 @@
+{
+  "name": "Igor Pankin",
+  "headline": "Technical Leader & Agent-Driven Development Pioneer",
+  "tagline": "I build intelligent systems that automate workflows, orchestrate microservices, and bridge the gap between business needs and technical excellence.",
+  "location": "Cyprus",
+  "email": "igor@igorp.com",
+  "linkedin": "https://www.linkedin.com/in/igorpankin/",
+  "github": "https://github.com/vespexx",
+  "strava": "https://www.strava.com/athletes/461770",
+  "garmin": "https://connect.garmin.com/app/profile/0d12d4ee-1c3d-41e4-a730-6da6aae34a3e",
+  "image": "/images/profile.jpg",
+  "resume": "/resume.pdf",
+  "roles": [
+    "Technical Leader",
+    "Agent-Driven Development Architect",
+    "Full-Stack Engineer",
+    "DevOps & Infrastructure Enthusiast"
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "role": "Technical Leader / Agent-Driven Development",
+      "company": "Self-Employed & Open Source",
+      "period": "2020 — Present",
+      "type": "work",
+      "description": "Architecting and building autonomous agent systems that orchestrate complex workflows across messaging, scheduling, data pipelines, and third-party APIs. Focused on creating maintainable, scalable solutions with measurable business impact.",
+      "highlights": [
+        "Designed and deployed omb-agent — a multi-agent orchestration platform using AutoGen, CrewAI, n8n, and Dify",
+        "Built tg-scheduler — a Telegram-based scheduling and automation system integrated with Google services",
+        "Created a Garmin-to-Google Sheets pipeline for automated fitness data aggregation",
+        "Developed and maintained Docker-based infrastructure-as-code environments for rapid prototyping"
+      ]
+    },
+    {
+      "id": 2,
+      "role": "Previous Roles",
+      "company": "Various Companies",
+      "period": "Earlier",
+      "type": "work",
+      "description": "Experienced in software engineering, system architecture, and team leadership across multiple domains including fintech, e-commerce, and SaaS platforms.",
+      "highlights": [
+        "Led development teams delivering measurable business outcomes",
+        "Designed and implemented scalable backend architectures",
+        "Established CI/CD pipelines and automated deployment workflows",
+        "Mentored junior developers and contributed to engineering culture"
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "id": 1,
+      "title": "Multi-Agent Orchestration Platform",
+      "metric": "100%",
+      "metricLabel": "Automation Coverage",
+      "description": "Built omb-agent — a platform orchestrating AI agents via AutoGen and CrewAI, connected to n8n, Dify, and Telegram. Achieved full end-to-end automation of complex multi-step workflows.",
+      "tags": ["AI Agents", "AutoGen", "CrewAI", "n8n", "Dify"]
+    },
+    {
+      "id": 2,
+      "title": "Infrastructure-as-Code Environment",
+      "metric": "15+",
+      "metricLabel": "Managed Stacks",
+      "description": "Designed and maintains a complete IaC dev environment with Docker Compose stacks for PostgreSQL, Redis, Qdrant, Traefik, Watchtower, and multiple application services — all version-controlled and reproducible.",
+      "tags": ["Docker", "DevOps", "CI/CD", "Automation"]
+    },
+    {
+      "id": 3,
+      "title": "Telegram Bot Automation",
+      "metric": "24/7",
+      "metricLabel": "Always-On",
+      "description": "Developed a Telegram-based scheduler and notification system that bridges messaging with Google Calendar, Google Sheets, and custom data pipelines — running reliably in production.",
+      "tags": ["Python", "Telegram API", "Google APIs", "Docker"]
+    },
+    {
+      "id": 4,
+      "title": "Fitness Data Pipeline",
+      "metric": "10K+",
+      "metricLabel": "Data Points Synced",
+      "description": "Built garmin2googlesheet — an automated pipeline extracting fitness metrics from Garmin Connect and syncing them to structured Google Sheets for analysis and visualization.",
+      "tags": ["Python", "Garmin API", "Google Sheets", "ETL"]
+    }
+  ]
+}
