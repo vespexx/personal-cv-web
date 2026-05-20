@@ -1,0 +1,40 @@
+{
+  "athlete": {
+    "name": "Igor P",
+    "location": "Cyprus",
+    "profileImage": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/461770/3269562/2/medium.jpg",
+    "stravaUrl": "https://www.strava.com/athletes/461770",
+    "garminUrl": "https://connect.garmin.com/app/profile/0d12d4ee-1c3d-41e4-a730-6da6aae34a3e"
+  },
+  "summary": "Endurance athlete based in Cyprus. Active in running, cycling, and swimming. Uses Strava to track activities and Garmin devices for detailed performance metrics.",
+  "activities": [
+    {
+      "type": "Running",
+      "emoji": "🏃",
+      "description": "Regular runner maintaining consistency across various distances. Training focused on endurance and pace improvement in the Mediterranean climate.",
+      "stats": {
+        "label": "Active Runner",
+        "value": "Consistent"
+      }
+    },
+    {
+      "type": "Cycling",
+      "emoji": "🚴",
+      "description": "Cycling enthusiast exploring Cyprus roads and trails. Combines endurance rides with performance tracking.",
+      "stats": {
+        "label": "Cyclist",
+        "value": "Active"
+      }
+    },
+    {
+      "type": "Swimming",
+      "emoji": "🏊",
+      "description": "Open water and pool swimming as part of a balanced triathlon-style training regimen in the Mediterranean.",
+      "stats": {
+        "label": "Swimmer",
+        "value": "Regular"
+      }
+    }
+  ],
+  "philosophy": "Sport is not just about physical health — it's about discipline, goal-setting, and continuous improvement. The same principles apply to engineering: consistency, measurement, and iteration lead to mastery."
+}

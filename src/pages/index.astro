@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import WorkTimeline from '../components/WorkTimeline.astro';
+import Achievements from '../components/Achievements.astro';
+import AgentProjects from '../components/AgentProjects.astro';
+import SportsStats from '../components/SportsStats.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Igor Pankin — Technical Leader & Agent-Driven Development"
+  description="Igor Pankin — Technical Leader & Agent-Driven Development pioneer. Building autonomous AI agent systems, automation pipelines, and infrastructure-as-code environments. Open to opportunities."
+  canonical="https://igorp.com"
+  ogImage="/og-image.png"
+>
+  <Header />
+  <main>
+    <Hero />
+    <WorkTimeline />
+    <Achievements />
+    <AgentProjects />
+    <SportsStats />
+    <ContactCTA />
+  </main>
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,131 @@
+---
+// ============================================
+// BaseLayout — SEO-optimized HTML5 boilerplate
+// Change theme by switching the CSS import below:
+//   "theme-professional-light"  → clean, corporate
+//   "theme-dark-tech"           → dark, tech-forward
+//   "theme-warm-minimal"        → warm, organic
+// ============================================
+import '../styles/global.css';
+import '../styles/theme-dark-tech.css'; // ← CHANGE THEME HERE
+
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+}
+
+const {
+  title,
+  description,
+  canonical = 'https://igorp.com',
+  ogImage = '/og-image.png',
+  ogType = 'website',
+} = Astro.props;
+
+const fullTitle = `${title} | Igor Pankin`;
+const keywords = 'Igor Pankin, Technical Leader, Agent-Driven Development, AI Agents, Software Engineer, DevOps, Full-Stack, Cyprus, Open Source';
+const schemaOrg = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Igor Pankin",
+  "givenName": "Igor",
+  "familyName": "Pankin",
+  "jobTitle": "Technical Leader & Agent-Driven Development Pioneer",
+  "description": "I build intelligent systems that automate workflows, orchestrate microservices, and bridge the gap between business needs and technical excellence.",
+  "url": "https://igorp.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/igorpankin/",
+    "https://github.com/vespexx",
+    "https://www.strava.com/athletes/461770"
+  ],
+  "knowsAbout": [
+    "Agent-Driven Development",
+    "AI Agents",
+    "Software Architecture",
+    "DevOps",
+    "Infrastructure as Code",
+    "Python",
+    "Docker"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Open Source & Contract"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CY"
+  }
+};
+---
+
+<!DOCTYPE html>
+<html lang="en" class="theme-dark-tech">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary Meta Tags -->
+  <title>{fullTitle}</title>
+  <meta name="title" content={fullTitle} />
+  <meta name="description" content={description} />
+  <meta name="keywords" content={keywords} />
+  <meta name="author" content="Igor Pankin" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href={canonical} />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content={ogType} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={`https://igorp.com${ogImage}`} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Igor Pankin" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content={canonical} />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={`https://igorp.com${ogImage}`} />
+
+  <!-- LinkedIn specific -->
+  <meta property="linkedin:profile" content="https://www.linkedin.com/in/igorpankin/" />
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.ico" />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- RSS / Sitemap -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap-index.xml" />
+
+  <!-- Theme color for browser chrome -->
+  <meta name="theme-color" content="#0a0a1a" />
+  <meta name="msapplication-TileColor" content="#0a0a1a" />
+
+  <!-- Prevent flash of unstyled content -->
+  <style>
+    html { visibility: hidden; opacity: 0; }
+    html.wf-active, html.wf-inactive { visibility: visible; opacity: 1; }
+  </style>
+</head>
+<body>
+  <slot />
+</body>
+</html>

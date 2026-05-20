@@ -1,0 +1,94 @@
+---
+// Sticky navigation header
+---
+
+<header class="header">
+  <nav class="container header__nav">
+    <a href="#hero" class="header__logo">
+      <span class="header__logo-text">IP</span>
+    </a>
+    <div class="header__links">
+      <a href="#work" class="header__link">Work</a>
+      <a href="#achievements" class="header__link">Achievements</a>
+      <a href="#agent-dev" class="header__link">Agent Dev</a>
+      <a href="#sports" class="header__link">Sports</a>
+      <a href="#contact" class="header__link btn btn-primary">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border);
+    transition: background var(--transition-base);
+  }
+
+  :global(.theme-dark-tech) .header {
+    background: rgba(10, 10, 26, 0.85);
+  }
+
+  :global(.theme-warm-minimal) .header {
+    background: rgba(250, 248, 245, 0.85);
+  }
+
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  .header__logo {
+    text-decoration: none;
+  }
+
+  .header__logo-text {
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: var(--color-accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .header__links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .header__link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    padding: 8px 16px;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    text-decoration: none;
+  }
+
+  .header__link:hover {
+    color: var(--color-text);
+    background: var(--color-bg-alt);
+  }
+
+  .header__link.btn {
+    font-size: 0.85rem;
+    padding: 8px 20px;
+  }
+
+  @media (max-width: 640px) {
+    .header__links a:not(.btn):not(:last-child) {
+      display: none;
+    }
+  }
+</style>
