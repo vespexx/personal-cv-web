@@ -18,7 +18,7 @@
     "name": "tg-scheduler",
     "fullName": "Telegram Scheduling & Automation",
     "description": "A Telegram-based scheduling bot that connects messaging with Google services (Calendar, Sheets) and custom data pipelines. Handles automated notifications, event scheduling, and data logging through natural language commands.",
-    "url": "https://github.com/vespexx/tg-sheduler",
+    "url": "https://github.com/vespexx/tg-scheduler",
     "language": "Python",
     "highlights": [
       "Natural language command processing via Telegram",
