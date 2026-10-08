@@ -6,7 +6,7 @@
     "stravaUrl": "https://www.strava.com/athletes/461770",
     "garminUrl": "https://connect.garmin.com/app/profile/0d12d4ee-1c3d-41e4-a730-6da6aae34a3e"
   },
-  "summary": "Endurance athlete based in Cyprus. Active in running, cycling, and swimming. Uses Strava to track activities and Garmin devices for detailed performance metrics.",
+  "summary": "Endurance athlete based in Cyprus. Active in running and cycling, with an occasional swim. Uses Strava to track activities and Garmin devices for detailed performance metrics.",
   "activities": [
     {
       "type": "Running",
@@ -29,12 +29,13 @@
     {
       "type": "Swimming",
       "emoji": "🏊",
-      "description": "Open water and pool swimming as part of a balanced triathlon-style training regimen in the Mediterranean.",
+      "description": "Only sometimes: an occasional swim in the Mediterranean or a pool, nothing regular.",
       "stats": {
         "label": "Swimmer",
-        "value": "Regular"
+        "value": "Sometimes"
       }
     }
   ],
-  "philosophy": "Sport is not just about physical health — it's about discipline, goal-setting, and continuous improvement. The same principles apply to engineering: consistency, measurement, and iteration lead to mastery."
+  "philosophy": "Don't wait for motivation. Motivation waits for those who are already running.",
+  "philosophyAuthor": "Jason Statham"
 }
