@@ -1,0 +1,30 @@
+---
+import workData from '../content/work.json';
+const { skills, education } = workData;
+---
+
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <div class="section-label animate-in">03 / Skills</div>
+    <h2 class="section-title animate-in animate-in-delay-1">Skills & Education</h2>
+    <div class="grid-2">
+      {skills.map((g, i) => (
+        <article class="card animate-in" style={`animation-delay: ${0.1 * (i + 1)}s`}>
+          <h3 class="skills__group">{g.group}</h3>
+          <div class="skills__tags">
+            {g.items.map((s) => <span class="tag">{s}</span>)}
+          </div>
+        </article>
+      ))}
+      <article class="card animate-in">
+        <h3 class="skills__group">Education</h3>
+        {education.map((e) => <p>{e.school}</p>)}
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .skills__group { font-size: 1.05rem; font-weight: 600; margin-bottom: 12px; }
+  .skills__tags { display: flex; flex-wrap: wrap; gap: 8px; }
+</style>
