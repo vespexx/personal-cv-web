@@ -7,7 +7,7 @@ const { experience } = workData;
   <div class="container">
     <div class="section-label animate-in">01 / Experience</div>
     <h2 class="section-title animate-in animate-in-delay-1">Work Timeline</h2>
-    <p class="section-subtitle animate-in animate-in-delay-2">A journey through engineering leadership, agent-driven development, and system architecture.</p>
+    <p class="section-subtitle animate-in animate-in-delay-2">Two decades in financial ERP and FinTech: delivery, product ownership, and automation.</p>
 
     <div class="timeline">
       {experience.map((exp, i) => (
@@ -23,11 +23,13 @@ const { experience } = workData;
             </div>
             <p class="timeline__company">{exp.company}</p>
             <p class="timeline__description">{exp.description}</p>
-            <ul class="timeline__highlights">
-              {exp.highlights.map((h) => (
-                <li class="timeline__highlight">{h}</li>
-              ))}
-            </ul>
+            {exp.highlights.length > 0 && (
+              <ul class="timeline__highlights">
+                {exp.highlights.map((h) => (
+                  <li class="timeline__highlight">{h}</li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       ))}
