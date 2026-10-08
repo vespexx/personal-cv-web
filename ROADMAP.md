@@ -7,7 +7,7 @@ This document outlines the tasks, configuration adjustments, and content enhance
 ## 📋 Content & Media Enhancements
 - [ ] **Profile Image**: Replace the default inline SVG placeholder in `src/components/Hero.astro` with an `<img>` tag pointing to your real photo (e.g., `/images/profile.jpg`).
 - [ ] **Resume PDF**: Place your actual resume in `public/resume.pdf` to enable the "Download Resume" link.
-- [ ] **LinkedIn Alignment**: Fine-tune the content inside `src/content/work.json` with detailed text about your previous work experience.
+- [x] **LinkedIn Alignment**: Fine-tune the content inside `src/content/work.json` with detailed text about your previous work experience.
 - [ ] **KPI & Achievements**: Update `src/content/achievements.json` with actual measurable results, financial statistics, and ROI from your projects.
 
 ## 🛠️ Domain & DNS Configuration (for igorp.com)
