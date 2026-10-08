@@ -1,8 +1,8 @@
 {
   "name": "Igor Pankin",
-  "headline": "Technical Leader & Agent-Driven Development Pioneer",
-  "tagline": "I build intelligent systems that automate workflows, orchestrate microservices, and bridge the gap between business needs and technical excellence.",
-  "location": "Cyprus",
+  "headline": "FinTech Product Manager & Project Delivery Lead",
+  "tagline": "18+ years delivering financial ERP and FinTech products — from Oracle E-Business Suite implementations to cloud migrations and SaaS — and building AI-agent automation on the side.",
+  "location": "Limassol, Cyprus",
   "email": "igor@igorp.com",
   "linkedin": "https://www.linkedin.com/in/igorpankin/",
   "github": "https://github.com/ExiosV",
@@ -11,38 +11,92 @@
   "image": "/images/profile.jpg",
   "resume": "/resume.pdf",
   "roles": [
-    "Technical Leader",
-    "Agent-Driven Development Architect",
-    "Full-Stack Engineer",
-    "DevOps & Infrastructure Enthusiast"
+    "FinTech Product Manager",
+    "Project Delivery Manager",
+    "Oracle ERP Specialist",
+    "Agent-Driven Development"
   ],
   "experience": [
     {
       "id": 1,
-      "role": "Technical Leader / Agent-Driven Development",
-      "company": "Self-Employed & Open Source",
-      "period": "2020 — Present",
+      "role": "Project Delivery Manager",
+      "company": "Softline Group",
+      "period": "Jan 2022 — Present",
       "type": "work",
-      "description": "Architecting and building autonomous agent systems that orchestrate complex workflows across messaging, scheduling, data pipelines, and third-party APIs. Focused on creating maintainable, scalable solutions with measurable business impact.",
+      "description": "Full cycle of financial application development and implementation projects for customers, including Flexfilm LTD and Auchan Retail Russia LTD.",
       "highlights": [
-        "Designed and deployed omb-agent — a multi-agent orchestration platform using AutoGen, CrewAI, n8n, and Dify",
-        "Built tg-scheduler — a Telegram-based scheduling and automation system integrated with Google services",
-        "Created a Garmin-to-Google Sheets pipeline for automated fitness data aggregation",
-        "Developed and maintained Docker-based infrastructure-as-code environments for rapid prototyping"
+        "Run delivery end to end: scope, planning, PMO, launch and handover",
+        "Product development and product launch for enterprise finance customers"
       ]
     },
     {
       "id": 2,
-      "role": "Previous Roles",
-      "company": "Various Companies",
-      "period": "Earlier",
+      "role": "Product Manager",
+      "company": "Borlas",
+      "period": "Jan 2018 — Present",
       "type": "work",
-      "description": "Experienced in software engineering, system architecture, and team leadership across multiple domains including fintech, e-commerce, and SaaS platforms.",
+      "description": "Product ownership for Oracle ERP financial solutions as an Oracle Platinum partner.",
       "highlights": [
-        "Led development teams delivering measurable business outcomes",
-        "Designed and implemented scalable backend architectures",
-        "Established CI/CD pipelines and automated deployment workflows",
-        "Mentored junior developers and contributed to engineering culture"
+        "First successful migration of complex on-premise ERP financial systems to Oracle ERP in Russia, with a hundred integrations and extensions",
+        "Built a SaaS service as an Oracle ERP extension from scratch",
+        "Developed and distributed the official Oracle localisation solution for Russia"
+      ]
+    },
+    {
+      "id": 3,
+      "role": "Senior Consultant",
+      "company": "Borlas",
+      "period": "Nov 2015 — Sep 2018",
+      "type": "work",
+      "description": "Custom financial software development and implementation of financial ERP applications for ALCOA, Auchan and General Electric.",
+      "highlights": []
+    },
+    {
+      "id": 4,
+      "role": "Software Consultant",
+      "company": "IBS Holding",
+      "period": "Mar 2010 — Nov 2015",
+      "type": "work",
+      "description": "Custom financial software development and implementation of Treasury applications for ChelyabEnergoSbyt JSC, FosAgro JSC, Mosvodocanal and others.",
+      "highlights": [
+        "Business process improvement and cross-team collaboration across Treasury projects"
+      ]
+    },
+    {
+      "id": 5,
+      "role": "Junior Analyst",
+      "company": "GMCS ltd.",
+      "period": "Nov 2006 — Jul 2009",
+      "type": "work",
+      "description": "Oracle E-Business Suite financials implementation in one of the biggest projects in Russia, Svyazinvest JSC (Volga region); also MTS JSC (GL, budgeting) and Volgatelecom JSC (Cash Flow, GL, Treasury).",
+      "highlights": [
+        "Surveyed business processes and wrote Functional Designs for GL, CE, TR and AP customizations",
+        "Tested modules and trained junior consultants and key users",
+        "Project went live on time at a high level of performance"
+      ]
+    },
+    {
+      "id": 6,
+      "role": "Support Engineer",
+      "company": "Svyazinvest JSC",
+      "period": "Jan 2006 — Nov 2006",
+      "type": "work",
+      "description": "Support and Technical Designs for the corporate system gathering RSBU/IFRS and budgeting reports; user consulting and regulations.",
+      "highlights": [
+        "The ERP system was chosen as the integration base for reporting from branches and affiliates"
+      ]
+    },
+    {
+      "id": 7,
+      "role": "Technical Leader / Agent-Driven Development",
+      "company": "Side projects & Open Source",
+      "period": "2020 — Present",
+      "type": "work",
+      "description": "Building autonomous agent systems that orchestrate workflows across messaging, scheduling, data pipelines and third-party APIs.",
+      "highlights": [
+        "omb-agent — multi-agent orchestration platform (AutoGen, CrewAI, n8n, Dify)",
+        "tg-scheduler — Telegram scheduling and automation with Google services",
+        "Docker/k3d infrastructure-as-code for rapid prototyping"
       ]
     }
   ],
@@ -53,7 +107,13 @@
       "metric": "100%",
       "metricLabel": "Automation Coverage",
       "description": "Built omb-agent — a platform orchestrating AI agents via AutoGen and CrewAI, connected to n8n, Dify, and Telegram. Achieved full end-to-end automation of complex multi-step workflows.",
-      "tags": ["AI Agents", "AutoGen", "CrewAI", "n8n", "Dify"]
+      "tags": [
+        "AI Agents",
+        "AutoGen",
+        "CrewAI",
+        "n8n",
+        "Dify"
+      ]
     },
     {
       "id": 2,
@@ -61,7 +121,12 @@
       "metric": "15+",
       "metricLabel": "Managed Stacks",
       "description": "Designed and maintains a complete IaC dev environment with Docker Compose stacks for PostgreSQL, Redis, Qdrant, Traefik, Watchtower, and multiple application services — all version-controlled and reproducible.",
-      "tags": ["Docker", "DevOps", "CI/CD", "Automation"]
+      "tags": [
+        "Docker",
+        "DevOps",
+        "CI/CD",
+        "Automation"
+      ]
     },
     {
       "id": 3,
@@ -69,7 +134,12 @@
       "metric": "24/7",
       "metricLabel": "Always-On",
       "description": "Developed a Telegram-based scheduler and notification system that bridges messaging with Google Calendar, Google Sheets, and custom data pipelines — running reliably in production.",
-      "tags": ["Python", "Telegram API", "Google APIs", "Docker"]
+      "tags": [
+        "Python",
+        "Telegram API",
+        "Google APIs",
+        "Docker"
+      ]
     },
     {
       "id": 4,
@@ -77,7 +147,47 @@
       "metric": "10K+",
       "metricLabel": "Data Points Synced",
       "description": "Built garmin2googlesheet — an automated pipeline extracting fitness metrics from Garmin Connect and syncing them to structured Google Sheets for analysis and visualization.",
-      "tags": ["Python", "Garmin API", "Google Sheets", "ETL"]
+      "tags": [
+        "Python",
+        "Garmin API",
+        "Google Sheets",
+        "ETL"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Lomonosov Moscow State University (MSU)"
+    }
+  ],
+  "skills": [
+    {
+      "group": "Product & Delivery",
+      "items": [
+        "Product Development",
+        "Product Launch",
+        "Project Delivery",
+        "Project Management Office (PMO)",
+        "Software Project Management",
+        "Business Process Improvement"
+      ]
+    },
+    {
+      "group": "Technology",
+      "items": [
+        "Oracle ERP / E-Business Suite",
+        "System Architecture",
+        "Software Development",
+        "Financial Systems Integration",
+        "SaaS"
+      ]
+    },
+    {
+      "group": "Interpersonal",
+      "items": [
+        "Cross-team Collaboration",
+        "Problem-solving & Strategic Thinking"
+      ]
     }
   ]
 }
