@@ -1,6 +1,8 @@
 ---
 import workData from '../content/work.json';
-const { experience } = workData;
+const { experience: all } = workData;
+const experience = all.filter((e) => e.type !== 'parallel');
+const parallel = all.filter((e) => e.type === 'parallel');
 ---
 
 <section id="work" class="section section-alt">
@@ -9,35 +11,105 @@ const { experience } = workData;
     <h2 class="section-title animate-in animate-in-delay-1">Work Timeline</h2>
     <p class="section-subtitle animate-in animate-in-delay-2">Two decades in financial ERP and FinTech: delivery, product ownership, and automation. One continuous career in one business since 2010: IBS Group (2010–2012), independent Borlas Group (2012–2023), Softline Group since 2023.</p>
 
-    <div class="timeline">
-      {experience.map((exp, i) => (
-        <div class="timeline__item animate-in" style={`animation-delay: ${0.15 * (i + 1)}s`}>
-          <div class="timeline__marker">
-            <div class="timeline__dot"></div>
-            {i < experience.length - 1 && <div class="timeline__line"></div>}
-          </div>
-          <div class="timeline__card card">
-            <div class="timeline__header">
-              <h3 class="timeline__role">{exp.role}</h3>
-              <span class="timeline__period">{exp.period}</span>
+    <div class="work-layout">
+      <div class="work-layout__main">
+      <div class="timeline">
+        {experience.map((exp, i) => (
+          <div class="timeline__item animate-in" style={`animation-delay: ${0.15 * (i + 1)}s`}>
+            <div class="timeline__marker">
+              <div class="timeline__dot"></div>
+              {i < experience.length - 1 && <div class="timeline__line"></div>}
             </div>
-            <p class="timeline__company">{exp.company}</p>
-            <p class="timeline__description">{exp.description}</p>
-            {exp.highlights.length > 0 && (
-              <ul class="timeline__highlights">
-                {exp.highlights.map((h) => (
-                  <li class="timeline__highlight">{h}</li>
-                ))}
-              </ul>
-            )}
+            <div class="timeline__card card">
+              <div class="timeline__header">
+                <h3 class="timeline__role">{exp.role}</h3>
+                <span class="timeline__period">{exp.period}</span>
+              </div>
+              <p class="timeline__company">{exp.company}</p>
+              <p class="timeline__description">{exp.description}</p>
+              {exp.highlights.length > 0 && (
+                <ul class="timeline__highlights">
+                  {exp.highlights.map((h) => (
+                    <li class="timeline__highlight">{h}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+      </div>
+      {parallel.length > 0 && (
+        <aside class="parallel animate-in">
+          <div class="parallel__label">Parallel track · now</div>
+          {parallel.map((p) => (
+            <article class="parallel__card card">
+              <div class="parallel__header">
+                <h3 class="parallel__role">{p.role}</h3>
+                <span class="timeline__period">{p.period}</span>
+              </div>
+              <p class="timeline__company">{p.company}</p>
+              <p class="timeline__description">{p.description}</p>
+              {p.highlights.length > 0 && (
+                <ul class="timeline__highlights">
+                  {p.highlights.map((h) => <li class="timeline__highlight">{h}</li>)}
+                </ul>
+              )}
+            </article>
+          ))}
+        </aside>
+      )}
     </div>
   </div>
 </section>
 
 <style>
+  .work-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  .work-layout__main { min-width: 0; }
+
+  .parallel { order: -1; }
+
+  .parallel__label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+  }
+
+  .parallel__header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+
+  .parallel__role {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  @media (min-width: 1000px) {
+    .work-layout {
+      grid-template-columns: minmax(0, 1fr) 320px;
+      align-items: start;
+    }
+    .parallel {
+      order: 0;
+      position: sticky;
+      top: 96px;
+    }
+    .timeline { margin: 0; max-width: none; }
+  }
+
   .timeline {
     display: flex;
     flex-direction: column;
