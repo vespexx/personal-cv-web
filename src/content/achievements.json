@@ -1,34 +1,52 @@
 [
   {
     "id": 1,
-    "title": "Multi-Agent Orchestration Platform",
-    "metric": "100%",
-    "metricLabel": "Automation Coverage",
-    "description": "Built omb-agent — a platform orchestrating AI agents via AutoGen and CrewAI, connected to n8n, Dify, and Telegram. Achieved full end-to-end automation of complex multi-step workflows that previously required manual coordination across multiple tools.",
-    "tags": ["AI Agents", "AutoGen", "CrewAI", "n8n", "Dify"]
+    "title": "Delivery portfolio",
+    "metric": "€4.5M+",
+    "metricLabel": "Revenue, 6 projects",
+    "description": "Financial ERP development, implementation and support projects delivered 2014–2025 with full ownership of scope, budget and team. Customers by request.",
+    "tags": [
+      "Oracle ERP",
+      "P&L",
+      "Delivery",
+      "Pre-sales"
+    ]
   },
   {
     "id": 2,
-    "title": "Infrastructure-as-Code Environment",
-    "metric": "15+",
-    "metricLabel": "Managed Stacks",
-    "description": "Designed and maintains a complete IaC dev environment with Docker Compose stacks for PostgreSQL, Redis, Qdrant, Traefik, Watchtower, Portainer, and multiple application services — all version-controlled, reproducible, and secured with automated secret rotation.",
-    "tags": ["Docker", "DevOps", "CI/CD", "Security"]
+    "title": "Profitable delivery",
+    "metric": "~€1.4M",
+    "metricLabel": "Profit on the portfolio",
+    "description": "Margin earned on the same portfolio; project ROI above 30% (figures rounded). Estimates, sales materials and delivery are owned end to end.",
+    "tags": [
+      "P&L Management",
+      "Estimation",
+      "Pre-sales"
+    ]
   },
   {
     "id": 3,
-    "title": "Telegram Bot Automation",
-    "metric": "24/7",
-    "metricLabel": "Production Uptime",
-    "description": "Developed a Telegram-based scheduler and notification system that bridges messaging with Google Calendar, Google Sheets, and custom data pipelines. Running reliably in production with automated deployment and monitoring.",
-    "tags": ["Python", "Telegram API", "Google APIs", "Docker"]
+    "title": "SaaS built from scratch",
+    "metric": "0 → 1",
+    "metricLabel": "Oracle ERP extension",
+    "description": "Designed and launched a SaaS service as an extension of Oracle ERP, and developed the official Oracle localisation solution for Russia as an Oracle Platinum partner.",
+    "tags": [
+      "SaaS",
+      "PaaS",
+      "Oracle ERP Cloud",
+      "Localization"
+    ]
   },
   {
     "id": 4,
-    "title": "Fitness Data Pipeline",
-    "metric": "10K+",
-    "metricLabel": "Data Points",
-    "description": "Built garmin2googlesheet — an automated ETL pipeline extracting fitness metrics from Garmin Connect and syncing them to structured Google Sheets, enabling custom analytics dashboards and long-term trend tracking.",
-    "tags": ["Python", "Garmin API", "Google Sheets API", "ETL"]
+    "title": "Long-term customer",
+    "metric": "11 years",
+    "metricLabel": "One customer retained",
+    "description": "A single customer kept across three engagements over eleven years: implementation, development and support.",
+    "tags": [
+      "Customer Success",
+      "ERP Support",
+      "Delivery"
+    ]
   }
 ]
