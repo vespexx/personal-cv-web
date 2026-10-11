@@ -86,7 +86,7 @@
       "role": "Technical Leader / Agent-Driven Development",
       "company": "Side projects & Open Source",
       "period": "2020 — Present",
-      "type": "work",
+      "type": "parallel",
       "description": "Building autonomous agent systems that orchestrate workflows across messaging, scheduling, data pipelines and third-party APIs.",
       "highlights": [
         "omb-agent — multi-agent orchestration platform (AutoGen, CrewAI, n8n, Dify)",
