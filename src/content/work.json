@@ -26,8 +26,10 @@
       "description": "Formal title: Lead Consultant. Delivery and P&L ownership for financial ERP projects and for in-house products taken to customers; regular participation in pre-sales (proposals, estimates, sales materials). Customers by request.",
       "highlights": [
         "Full-cycle ownership of financial application development and implementation projects across industry, retail and other sectors: scope, budget, team, launch, support",
-        "Portfolio of over €4.5M revenue and about €1.4M profit across 6 projects (2014–2025), ROI above 30%",
-        "Product development and launch of in-house solutions offered to enterprise finance customers"
+        "Led the migration of a large enterprise's financial ERP platform (applications, integrations, reports, data) and the implementation of financial and tax modules for an industrial customer",
+        "Pre-sales for large telecom, chemicals, energy and mining customers: proposals, estimates, sales materials",
+        "Built IFRS and management P&L reporting automation for group finance",
+        "Portfolio of over €4.5M revenue and about €1.4M profit across 6 projects (2014–2025), ROI above 30%"
       ]
     },
     {
@@ -50,8 +52,10 @@
       "company": "Softline Group (Borlas Group)",
       "period": "2013 — 2017",
       "type": "work",
-      "description": "Custom financial software development and implementation of financial ERP applications for global industrial and retail customers (names by request).",
-      "highlights": []
+      "description": "Development, enhancement and functional support of financial ERP applications for global industrial and retail customers (names by request).",
+      "highlights": [
+        "Functional design, development and enhancement of financial modules, reports and localisation features for long-running ERP customers"
+      ]
     },
     {
       "id": 4,
