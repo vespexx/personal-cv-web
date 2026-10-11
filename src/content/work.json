@@ -1,7 +1,7 @@
 {
   "name": "Igor Pankin",
-  "headline": "FinTech Product Manager & Project Delivery Lead",
-  "tagline": "18+ years delivering financial ERP and FinTech products — from Oracle E-Business Suite implementations to cloud migrations and SaaS — and building AI-agent automation on the side.",
+  "headline": "Finance Systems & ERP Product Lead",
+  "tagline": "20 years in financial ERP and FinTech: Oracle E-Business Suite and Oracle ERP Cloud implementation, custom development, SaaS/PaaS and integrations, delivery with P&L ownership — and AI-agent automation on the side.",
   "location": "Limassol, Cyprus",
   "email": "igor@igorp.com",
   "linkedin": "https://www.linkedin.com/in/igorpankin/",
@@ -11,7 +11,7 @@
   "image": "/images/profile.jpg",
   "resume": "/resume.pdf",
   "roles": [
-    "FinTech Product Manager",
+    "Finance Systems & ERP Product Lead",
     "Project Delivery Manager",
     "Oracle ERP Specialist",
     "Agent-Driven Development"
@@ -20,44 +20,46 @@
     {
       "id": 1,
       "role": "Project Delivery Manager",
-      "company": "Softline Group",
-      "period": "Jan 2022 — Present",
+      "company": "Softline Group (Borlas Group)",
+      "period": "2022 — Present",
       "type": "work",
-      "description": "Full cycle of financial application development and implementation projects for customers, including Flexfilm LTD and Auchan Retail Russia LTD.",
+      "description": "Formal title: Lead Consultant. Delivery and P&L ownership for financial ERP projects and for in-house products taken to customers; regular participation in pre-sales (proposals, estimates, sales materials). Customers by request.",
       "highlights": [
-        "Run delivery end to end: scope, planning, PMO, launch and handover",
-        "Product development and product launch for enterprise finance customers"
+        "Full-cycle ownership of financial application development and implementation projects across industry, retail and other sectors: scope, budget, team, launch, support",
+        "Portfolio of over €4.5M revenue and about €1.4M profit across 6 projects (2014–2025), ROI above 30%",
+        "Product development and launch of in-house solutions offered to enterprise finance customers"
       ]
     },
     {
       "id": 2,
-      "role": "Product Manager",
-      "company": "Borlas",
-      "period": "Jan 2018 — Present",
+      "role": "Project & Product Manager",
+      "company": "Softline Group (Borlas Group)",
+      "period": "2018 — 2021",
       "type": "work",
-      "description": "Product ownership for Oracle ERP financial solutions as an Oracle Platinum partner.",
+      "description": "Formal title: Senior Consultant (Lead Consultant from 2021). Project management and product ownership for Oracle ERP financial solutions as an Oracle Platinum partner.",
       "highlights": [
-        "First successful migration of complex on-premise ERP financial systems to Oracle ERP in Russia, with a hundred integrations and extensions",
-        "Built a SaaS service as an Oracle ERP extension from scratch",
-        "Developed and distributed the official Oracle localisation solution for Russia"
+        "Led the Oracle ERP Cloud implementation for a major enterprise customer together with its international head-office team and a global integrator",
+        "Built a SaaS service from scratch as an extension of Oracle ERP",
+        "Developed and distributed the official Oracle localisation solution for Russia",
+        "Delivered a multi-year PaaS-based support contract for a large customer"
       ]
     },
     {
       "id": 3,
       "role": "Senior Consultant",
-      "company": "Borlas",
-      "period": "Nov 2015 — Sep 2018",
+      "company": "Softline Group (Borlas Group)",
+      "period": "2013 — 2017",
       "type": "work",
-      "description": "Custom financial software development and implementation of financial ERP applications for ALCOA, Auchan and General Electric.",
+      "description": "Custom financial software development and implementation of financial ERP applications for global industrial and retail customers (names by request).",
       "highlights": []
     },
     {
       "id": 4,
       "role": "Software Consultant",
-      "company": "IBS Holding",
-      "period": "Mar 2010 — Nov 2015",
+      "company": "Softline Group (Borlas Group)",
+      "period": "2010 — 2013",
       "type": "work",
-      "description": "Custom financial software development and implementation of Treasury applications for ChelyabEnergoSbyt JSC, FosAgro JSC, Mosvodocanal and others.",
+      "description": "Custom financial software development and implementation of Treasury applications for energy, chemicals and utilities customers. Part of IBS Group (IBS Borlas practice) until 2012.",
       "highlights": [
         "Business process improvement and cross-team collaboration across Treasury projects"
       ]
@@ -66,9 +68,9 @@
       "id": 5,
       "role": "Junior Analyst",
       "company": "GMCS ltd.",
-      "period": "Nov 2006 — Jul 2009",
+      "period": "2006 — 2009",
       "type": "work",
-      "description": "Oracle E-Business Suite financials implementation in one of the biggest projects in Russia, Svyazinvest JSC (Volga region); also MTS JSC (GL, budgeting) and Volgatelecom JSC (Cash Flow, GL, Treasury).",
+      "description": "Oracle E-Business Suite financials implementation in one of the biggest projects in Russia, for a state telecom holding; also GL, budgeting, cash flow and treasury modules for large telecom operators.",
       "highlights": [
         "Surveyed business processes and wrote Functional Designs for GL, CE, TR and AP customizations",
         "Tested modules and trained junior consultants and key users",
@@ -77,17 +79,6 @@
     },
     {
       "id": 6,
-      "role": "Support Engineer",
-      "company": "Svyazinvest JSC",
-      "period": "Jan 2006 — Nov 2006",
-      "type": "work",
-      "description": "Support and Technical Designs for the corporate system gathering RSBU/IFRS and budgeting reports; user consulting and regulations.",
-      "highlights": [
-        "The ERP system was chosen as the integration base for reporting from branches and affiliates"
-      ]
-    },
-    {
-      "id": 7,
       "role": "Technical Leader / Agent-Driven Development",
       "company": "Side projects & Open Source",
       "period": "2020 — Present",
@@ -100,61 +91,6 @@
       ]
     }
   ],
-  "achievements": [
-    {
-      "id": 1,
-      "title": "Multi-Agent Orchestration Platform",
-      "metric": "100%",
-      "metricLabel": "Automation Coverage",
-      "description": "Built omb-agent — a platform orchestrating AI agents via AutoGen and CrewAI, connected to n8n, Dify, and Telegram. Achieved full end-to-end automation of complex multi-step workflows.",
-      "tags": [
-        "AI Agents",
-        "AutoGen",
-        "CrewAI",
-        "n8n",
-        "Dify"
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Infrastructure-as-Code Environment",
-      "metric": "15+",
-      "metricLabel": "Managed Stacks",
-      "description": "Designed and maintains a complete IaC dev environment with Docker Compose stacks for PostgreSQL, Redis, Qdrant, Traefik, Watchtower, and multiple application services — all version-controlled and reproducible.",
-      "tags": [
-        "Docker",
-        "DevOps",
-        "CI/CD",
-        "Automation"
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Telegram Bot Automation",
-      "metric": "24/7",
-      "metricLabel": "Always-On",
-      "description": "Developed a Telegram-based scheduler and notification system that bridges messaging with Google Calendar, Google Sheets, and custom data pipelines — running reliably in production.",
-      "tags": [
-        "Python",
-        "Telegram API",
-        "Google APIs",
-        "Docker"
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Fitness Data Pipeline",
-      "metric": "10K+",
-      "metricLabel": "Data Points Synced",
-      "description": "Built garmin2googlesheet — an automated pipeline extracting fitness metrics from Garmin Connect and syncing them to structured Google Sheets for analysis and visualization.",
-      "tags": [
-        "Python",
-        "Garmin API",
-        "Google Sheets",
-        "ETL"
-      ]
-    }
-  ],
   "education": [
     {
       "school": "Lomonosov Moscow State University (MSU)"
@@ -162,31 +98,44 @@
   ],
   "skills": [
     {
+      "group": "Finance Systems & ERP",
+      "items": [
+        "Oracle ERP Cloud / Oracle Fusion Applications",
+        "Oracle E-Business Suite",
+        "ERP Implementation",
+        "ERP Customization & Custom Development",
+        "Financial Systems",
+        "General Ledger",
+        "Accounts Payable",
+        "Procurement",
+        "SCM",
+        "ERP Integration (finance, logistics, procurement)",
+        "SaaS / PaaS Development",
+        "Localization"
+      ]
+    },
+    {
       "group": "Product & Delivery",
       "items": [
-        "Product Development",
-        "Product Launch",
+        "Product Management",
+        "Product Development & Launch",
         "Project Delivery",
-        "Project Management Office (PMO)",
-        "Software Project Management",
+        "PMO",
+        "P&L Management",
+        "Pre-sales",
+        "Stakeholder Management",
         "Business Process Improvement"
       ]
     },
     {
-      "group": "Technology",
+      "group": "AI & Automation",
       "items": [
-        "Oracle ERP / E-Business Suite",
-        "System Architecture",
-        "Software Development",
-        "Financial Systems Integration",
-        "SaaS"
-      ]
-    },
-    {
-      "group": "Interpersonal",
-      "items": [
-        "Cross-team Collaboration",
-        "Problem-solving & Strategic Thinking"
+        "AI Agents",
+        "Automation",
+        "Python",
+        "Docker",
+        "n8n",
+        "Infrastructure as Code"
       ]
     }
   ]
