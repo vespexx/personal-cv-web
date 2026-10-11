@@ -1,6 +1,8 @@
 ---
 import workData from '../content/work.json';
 const { name, headline, tagline, roles, image, linkedin, github } = workData;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const photo = `${base}${image}`;
 ---
 
 <section id="hero" class="hero section">
@@ -31,18 +33,7 @@ const { name, headline, tagline, roles, image, linkedin, github } = workData;
         <div class="hero__avatar-wrapper">
           <div class="hero__avatar-glow"></div>
           <div class="hero__avatar">
-            <svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Placeholder avatar — replace with actual image -->
-              <rect width="280" height="280" rx="140" fill="url(#avatarGrad)" />
-              <circle cx="140" cy="112" r="48" fill="rgba(255,255,255,0.2)" />
-              <ellipse cx="140" cy="212" rx="64" ry="52" fill="rgba(255,255,255,0.15)" />
-              <defs>
-                <linearGradient id="avatarGrad" x1="0" y1="0" x2="280" y2="280">
-                  <stop offset="0%" stop-color="var(--color-accent)" />
-                  <stop offset="100%" stop-color="var(--color-accent-hover)" />
-                </linearGradient>
-              </defs>
-            </svg>
+            <img src={photo} alt="Igor Pankin" width="280" height="280" loading="eager" />
           </div>
         </div>
         <div class="hero__status-dots">
@@ -180,6 +171,13 @@ const { name, headline, tagline, roles, image, linkedin, github } = workData;
     overflow: hidden;
     border: 3px solid var(--color-border);
     box-shadow: 0 16px 48px var(--color-shadow);
+  }
+
+  .hero__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   .hero__status-dots {
