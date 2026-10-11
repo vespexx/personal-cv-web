@@ -39,13 +39,13 @@
   },
   {
     "id": 4,
-    "title": "Long-term customer",
-    "metric": "11 years",
-    "metricLabel": "One customer retained",
-    "description": "A single customer kept across three engagements over eleven years: implementation, development and support.",
+    "title": "Long-term customer relationships",
+    "metric": "10+ years",
+    "metricLabel": "Multi-year retention",
+    "description": "Contributed to projects at several enterprise customers; positive delivery feedback led to multi-year retention, with development and support relationships running for more than ten years.",
     "tags": [
       "Customer Success",
-      "ERP Support",
+      "ERP Development",
       "Delivery"
     ]
   }
