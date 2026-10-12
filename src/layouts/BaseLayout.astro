@@ -20,13 +20,13 @@ export interface Props {
 const {
   title,
   description,
-  canonical = 'https://info1.igorp.com/',
+  canonical = 'https://cv.igorp.com/',
   ogImage = '/og-image.png',
   ogType = 'website',
 } = Astro.props;
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const imageUrl = `https://info1.igorp.com${base}${ogImage}`;
+const imageUrl = `https://cv.igorp.com${base}${ogImage}`;
 const fullTitle = `${title} | Igor Pankin`;
 const keywords = 'Igor Pankin, Finance Systems, ERP, Oracle ERP Cloud, Oracle E-Business Suite, Product Owner, Delivery Manager, Project Management, SaaS, PaaS, Integrations, P&L, Pre-sales, FinTech, Limassol, Cyprus, AI agents';
 const schemaOrg = {
@@ -37,7 +37,7 @@ const schemaOrg = {
   "familyName": "Pankin",
   "jobTitle": "Finance Systems & ERP Product Lead",
   "description": "Finance systems and ERP product and delivery lead with 20 years in Oracle E-Business Suite and Oracle ERP Cloud: implementation, SaaS/PaaS, integrations, P&L and pre-sales. AI-agent automation on the side.",
-  "url": "https://info1.igorp.com/",
+  "url": "https://cv.igorp.com/",
   "sameAs": [
     "https://www.linkedin.com/in/igorpankin/",
     "https://github.com/vespexx",

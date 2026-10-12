@@ -24,7 +24,7 @@ This service is part of the @ExiosV infrastructure:
 
 - **CI/CD:** GitHub → Self-hosted Runner → Infisical → Docker
 - **Deploy:** GitOps — push to `main` triggers redeploy
-- **Repo:** [`ExiosV/web-about-me`](https://github.com/ExiosV/web-about-me)
+- **Repo:** [`vespexx/web-about-me`](https://github.com/vespexx/web-about-me)
 
 ## Learn More
 
