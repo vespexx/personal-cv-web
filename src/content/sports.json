@@ -1,38 +1,47 @@
 {
   "athlete": {
     "name": "Igor P",
-    "location": "Cyprus",
-    "profileImage": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/461770/3269562/2/medium.jpg",
+    "location": "Limassol, Cyprus",
+    "profileImage": "/images/profile.jpg",
     "stravaUrl": "https://www.strava.com/athletes/461770",
     "garminUrl": "https://connect.garmin.com/app/profile/0d12d4ee-1c3d-41e4-a730-6da6aae34a3e"
   },
-  "summary": "Endurance athlete based in Cyprus. Active in running and cycling, with an occasional swim. Uses Strava to track activities and Garmin devices for detailed performance metrics.",
+  "summary": "Endurance athlete in Limassol: gravel cycling first, then running, hiking and the occasional open-water swim. Tracked with a Garmin Forerunner 965 and Strava (figures as of 12 Oct 2026).",
   "activities": [
     {
-      "type": "Running",
-      "emoji": "🏃",
-      "description": "Regular runner maintaining consistency across various distances. Training focused on endurance and pace improvement in the Mediterranean climate.",
-      "stats": {
-        "label": "Active Runner",
-        "value": "Consistent"
-      }
-    },
-    {
-      "type": "Cycling",
+      "type": "Gravel & road cycling",
       "emoji": "🚴",
-      "description": "Cycling enthusiast exploring Cyprus roads and trails. Combines endurance rides with performance tracking.",
+      "description": "The main sport: gravel rides around Limassol and Akrotiri, longer road and MTB rides when travelling. 611 rides and about 11,500 km since joining Strava; longest ride 87.5 km, biggest climb 780 m.",
       "stats": {
-        "label": "Cyclist",
-        "value": "Active"
+        "label": "2026 so far · 79 rides · 21,800 m climbing",
+        "value": "2,420 km"
       }
     },
     {
-      "type": "Swimming",
-      "emoji": "🏊",
-      "description": "Only sometimes: an occasional swim in the Mediterranean or a pool, nothing regular.",
+      "type": "Running & trail",
+      "emoji": "🏃",
+      "description": "Short, regular runs in the Mediterranean heat plus trail runs in the hills. All-time 79 runs and 348 km; personal bests 5K in 24:30 and 10K in 57:12.",
       "stats": {
-        "label": "Swimmer",
-        "value": "Sometimes"
+        "label": "2026 so far · 29 runs",
+        "value": "153 km"
+      }
+    },
+    {
+      "type": "Hiking & walking",
+      "emoji": "🥾",
+      "description": "Long walks and hill hikes, especially in summer trips to the Balkans: several hikes of 9–12 km with 200+ minutes on the trail.",
+      "stats": {
+        "label": "longest recent hike, Jul 2026",
+        "value": "11.9 km"
+      }
+    },
+    {
+      "type": "Open-water swimming",
+      "emoji": "🏊",
+      "description": "Only sometimes: short open-water swims in the Mediterranean, nothing regular.",
+      "stats": {
+        "label": "Akrotiri, Jul 2026",
+        "value": "0.65 km"
       }
     }
   ],
