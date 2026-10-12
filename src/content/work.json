@@ -23,13 +23,12 @@
       "company": "Softline Group (Borlas Group)",
       "period": "2021 — Present",
       "type": "work",
-      "description": "Formal title: Lead Consultant. Delivery and P&L ownership for financial ERP projects and for in-house products taken to customers; regular participation in pre-sales (proposals, estimates, sales materials). Customers by request.",
+      "description": "Formal title: Lead Consultant. Delivery and P&L ownership for financial ERP projects and for in-house products taken to customers. Customers by request.",
       "highlights": [
-        "Full-cycle ownership of financial application development and implementation projects across industry, retail and other sectors: scope, budget, team, launch, support",
-        "Led the migration of a large enterprise's financial ERP platform (applications, integrations, reports, data) and the implementation of financial and tax modules for an industrial customer",
-        "Pre-sales for large telecom, chemicals, energy and mining customers: proposals, estimates, sales materials",
-        "Built IFRS and management P&L reporting automation for group finance",
-        "Portfolio of over €4.5M revenue and about €1.4M profit across 6 projects (2014–2025), ROI above 30%"
+        "Delivered a portfolio of 6 projects (2014–2025): over €4.5M revenue and about €1.4M profit, ROI above 30%; own scope, budget, team and P&L",
+        "Led the migration of a large enterprise's financial ERP platform (applications, integrations, reports, data) with no interruption to financial close; implemented financial and tax modules for an industrial customer",
+        "Supported sales of large telecom, chemicals, energy and mining deals: proposals, estimates, sales materials",
+        "Automated IFRS and management P&L reporting for group finance"
       ]
     },
     {
@@ -40,10 +39,10 @@
       "type": "work",
       "description": "Formal title: Senior Consultant (Lead Consultant from 2021). Project management and product ownership for Oracle ERP financial solutions as an Oracle Platinum partner.",
       "highlights": [
-        "Led the Oracle ERP Cloud implementation for a major enterprise customer together with its international head-office team and a global integrator",
-        "Built a SaaS service from scratch as an extension of Oracle ERP",
+        "Delivered an Oracle ERP Cloud implementation for a major enterprise customer alongside its international head-office team and a global integrator",
+        "Built a SaaS product from scratch as an extension of Oracle ERP and took it to customers",
         "Developed and distributed the official Oracle localisation solution for Russia",
-        "Delivered a multi-year PaaS-based support contract for a large customer"
+        "Ran a multi-year PaaS-based support contract for a large customer"
       ]
     },
     {
@@ -54,7 +53,7 @@
       "type": "work",
       "description": "Development, enhancement and functional support of financial ERP applications for global industrial and retail customers (names by request).",
       "highlights": [
-        "Functional design, development and enhancement of financial modules, reports and localisation features for long-running ERP customers"
+        "Owned functional design and development of financial modules, reports and localisation features for global industrial and retail customers; kept one retail ERP customer for 10+ years"
       ]
     },
     {
@@ -65,7 +64,7 @@
       "type": "work",
       "description": "Custom financial software development and implementation of Treasury applications for energy, chemicals and utilities customers. Part of IBS Group (IBS Borlas practice) until 2012.",
       "highlights": [
-        "Business process improvement and cross-team collaboration across Treasury projects"
+        "Delivered Treasury applications for energy, chemicals and utilities customers, with business process improvement"
       ]
     },
     {
@@ -76,9 +75,8 @@
       "type": "work",
       "description": "Oracle E-Business Suite financials implementation in one of the biggest projects in Russia, for a state telecom holding; also GL, budgeting, cash flow and treasury modules for large telecom operators.",
       "highlights": [
-        "Surveyed business processes and wrote Functional Designs for GL, CE, TR and AP customizations",
-        "Tested modules and trained junior consultants and key users",
-        "Project went live on time at a high level of performance"
+        "Took part in the Oracle EBS financials implementation (GL, CE, TR, AP) for a state telecom holding; project went live on time",
+        "Wrote functional designs, tested modules, trained junior consultants and key users"
       ]
     },
     {
@@ -89,7 +87,7 @@
       "type": "parallel",
       "description": "Building autonomous agent systems that orchestrate workflows across messaging, scheduling, data pipelines and third-party APIs.",
       "highlights": [
-        "omb-agent — multi-agent orchestration platform (AutoGen, CrewAI, n8n, Dify)",
+        "Built omb-agent, a multi-agent orchestration platform (AutoGen, CrewAI, n8n, Dify) that runs my own workflows across messaging, scheduling and data pipelines",
         "tg-scheduler — Telegram scheduling and automation with Google services",
         "Docker/k3d infrastructure-as-code for rapid prototyping"
       ]
