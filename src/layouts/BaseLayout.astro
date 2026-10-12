@@ -20,11 +20,13 @@ export interface Props {
 const {
   title,
   description,
-  canonical = 'https://igorp.com',
+  canonical = 'https://info1.igorp.com/',
   ogImage = '/og-image.png',
   ogType = 'website',
 } = Astro.props;
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const imageUrl = `https://info1.igorp.com${base}${ogImage}`;
 const fullTitle = `${title} | Igor Pankin`;
 const keywords = 'Igor Pankin, Finance Systems, ERP, Oracle ERP Cloud, Oracle E-Business Suite, Product Owner, Delivery Manager, Project Management, SaaS, PaaS, Integrations, P&L, Pre-sales, FinTech, Limassol, Cyprus, AI agents';
 const schemaOrg = {
@@ -35,7 +37,7 @@ const schemaOrg = {
   "familyName": "Pankin",
   "jobTitle": "Finance Systems & ERP Product Lead",
   "description": "Finance systems and ERP product and delivery lead with 20 years in Oracle E-Business Suite and Oracle ERP Cloud: implementation, SaaS/PaaS, integrations, P&L and pre-sales. AI-agent automation on the side.",
-  "url": "https://igorp.com",
+  "url": "https://info1.igorp.com/",
   "sameAs": [
     "https://www.linkedin.com/in/igorpankin/",
     "https://github.com/vespexx",
@@ -89,7 +91,7 @@ const schemaOrg = {
   <meta property="og:url" content={canonical} />
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content={`https://igorp.com${ogImage}`} />
+  <meta property="og:image" content={imageUrl} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="en_US" />
@@ -100,7 +102,7 @@ const schemaOrg = {
   <meta name="twitter:url" content={canonical} />
   <meta name="twitter:title" content={fullTitle} />
   <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={`https://igorp.com${ogImage}`} />
+  <meta name="twitter:image" content={imageUrl} />
 
   <!-- LinkedIn specific -->
   <meta property="linkedin:profile" content="https://www.linkedin.com/in/igorpankin/" />
@@ -109,15 +111,13 @@ const schemaOrg = {
   <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="alternate icon" href="/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+  <link rel="alternate icon" href={`${base}/favicon.ico`} />
 
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- RSS / Sitemap -->
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap-index.xml" />
 
   <!-- Theme color for browser chrome -->
   <meta name="theme-color" content="#0a0a1a" />
