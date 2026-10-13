@@ -2,85 +2,57 @@
   {
     "id": 1,
     "name": "omb-agent",
-    "fullName": "Agent-Driven Orchestration Platform",
-    "description": "A multi-agent orchestration platform that coordinates AI agents — built with AutoGen and CrewAI. It integrates with n8n for workflow automation, Dify for RAG pipelines, and Telegram for conversational interfaces. The platform manages AI agents as composable skills with semantic routing.",
-    "url": "https://github.com/ExiosV/omb-agent",
-    "language": "Python",
+    "title": "Multi-agent AI platform",
+    "description": "A self-developing agent platform: a supervisor agent routes requests to skills and tools, answers through an OpenAI-compatible API and works from Telegram, a web chat and workflow tools.",
     "highlights": [
-      "Multi-agent orchestration with AutoGen and CrewAI",
-      "Skill-based architecture with semantic routing",
-      "Integration with n8n, Dify, Telegram, and Qdrant",
-      "Dockerized deployment with CI/CD pipeline"
-    ]
+      "LangGraph supervisor behind a FastAPI service; RAG microservice on LlamaIndex and a vector database",
+      "23+ reusable skills served over MCP (Model Context Protocol), with rules and a written 'constitution' for the agents",
+      "One gateway to local and cloud LLMs with tracing and evaluation of every call (Langfuse)",
+      "Skills and lessons feed back into the repository through pull requests"
+    ],
+    "stack": ["Python", "LangGraph", "MCP", "RAG / Qdrant", "LiteLLM", "Langfuse"],
+    "shows": "AI-agent architecture, LLM operations, product thinking (skills as a roadmap)"
   },
   {
     "id": 2,
-    "name": "tg-scheduler",
-    "fullName": "Telegram Scheduling & Automation",
-    "description": "A Telegram-based scheduling bot that connects messaging with Google services (Calendar, Sheets) and custom data pipelines. Handles automated notifications, event scheduling, and data logging through natural language commands.",
-    "url": "https://github.com/ExiosV/tg-scheduler",
-    "language": "Python",
+    "name": "Self-hosted Kubernetes platform",
+    "title": "Platform and DevOps",
+    "description": "The runtime for all my projects: 25+ services in a Kubernetes (k3d) cluster at home, described as code with a decision log and runbooks.",
     "highlights": [
-      "Natural language command processing via Telegram",
-      "Google Calendar and Google Sheets integration",
-      "Automated notifications and reminders",
-      "Production-ready Docker deployment"
-    ]
+      "GitHub Actions deploys each app to the cluster; Renovate keeps images up to date",
+      "Public access only through Cloudflare Tunnel with Cloudflare Access (no open ports, e-mail allow-list)",
+      "Secrets kept out of git; metrics, dashboards and OpenTelemetry traces (VictoriaMetrics, Grafana)",
+      "Migrated from Docker Compose to Kubernetes and documented every decision"
+    ],
+    "stack": ["Kubernetes", "Docker", "GitHub Actions", "Cloudflare Tunnel / Access", "Grafana", "Infrastructure as Code"],
+    "shows": "DevOps and security basics, documentation discipline, migration of a live system"
   },
   {
     "id": 3,
-    "name": "tgkart2googlph",
-    "fullName": "Telegram Cart → Google Photos Pipeline",
-    "description": "An automation pipeline that forwards media from Telegram forwarded messages to Google Photos, creating an organized photo backup system with metadata preservation.",
-    "url": "https://github.com/ExiosV/tgkart2googlph",
-    "language": "Python",
+    "name": "tg-bridges",
+    "title": "Telegram assistant with LLM digests",
+    "description": "A personal Telegram assistant: summarises unread channels into a daily digest, notifies about reactions to my posts and tracks media performance.",
     "highlights": [
-      "Telegram message scraping and media extraction",
-      "Google Photos API integration for backup",
-      "Metadata preservation and organization",
-      "Containerized with Docker Compose"
-    ]
+      "Digest per Telegram folder with de-duplication, token limits and editable prompts",
+      "Real-time reaction tracking and threshold alerts on media posts",
+      "Async Python (Telethon), SQLite state, any OpenAI-compatible model, graceful shutdown",
+      "Runs as a container in the cluster"
+    ],
+    "stack": ["Python (asyncio)", "Telethon", "OpenAI-compatible LLMs", "SQLite", "Docker"],
+    "shows": "A complete LLM application, from requirements to production"
   },
   {
     "id": 4,
-    "name": "garmin2googlesheet",
-    "fullName": "Garmin Fitness → Google Sheets Pipeline",
-    "description": "An ETL pipeline that extracts fitness metrics from Garmin Connect and syncs them to Google Sheets for structured analysis and visualization. Enables custom fitness dashboards and trend tracking.",
-    "url": "https://github.com/ExiosV/garmin2googlesheet",
-    "language": "Python",
+    "name": "Personal data pipelines",
+    "title": "Small automation services",
+    "description": "A set of small production services that move data between systems and run unattended.",
     "highlights": [
-      "Automated Garmin Connect data extraction",
-      "Google Sheets API integration for structured storage",
-      "Scheduled sync with configurable intervals",
-      "Enables custom fitness analytics and visualization"
-    ]
-  },
-  {
-    "id": 5,
-    "name": "infra-as-code",
-    "fullName": "Infrastructure-as-Code Dev Environment",
-    "description": "A comprehensive Docker-based local development environment for orchestrating production-like infrastructure and application stacks. Manages 15+ services including databases, queues, vector stores, reverse proxy, and watchtower auto-updates — all through version-controlled Docker Compose configurations.",
-    "url": "https://github.com/ExiosV/infra-as-code",
-    "language": "PowerShell",
-    "highlights": [
-      "15+ Docker Compose stacks for various services",
-      "Integrated dev-container with VS Code workspace",
-      "Automated secrets management and secret rotation",
-      "GitHub Actions for CI/CD and security scanning"
-    ]
-  },
-  {
-    "id": 6,
-    "name": "hon",
-    "fullName": "Home Assistant Haier hOn Integration",
-    "description": "Home Assistant custom integration for Haier hOn ecosystem — supporting Haier, Candy, and Hoover home appliances in 19 languages. Enables smart home control of washing machines, air conditioners, and more.",
-    "url": "https://github.com/ExiosV/hon",
-    "language": "Python",
-    "highlights": [
-      "Multi-brand support (Haier, Candy, Hoover)",
-      "19 language locales",
-      "Home Assistant native integration",
-      "IoT smart home automation"
-    ]
+      "Telegram channels to Google Photos backup that catches up on missed posts after downtime",
+      "Garmin LiveTrack e-mails (Gmail API, OAuth) to a Telegram channel, each link sent exactly once",
+      "Daily Telegram feed of new rental listings and a scheduled mirror of a closed blog with a git archive",
+      "Scheduled jobs, idempotent processing and alerts before token expiry"
+    ],
+    "stack": ["Python", "Gmail API", "Google Photos API", "Telegram Bot API", "Kubernetes CronJobs"],
+    "shows": "API integration, reliability and idempotency, scheduled ETL"
   }
 ]

@@ -87,9 +87,9 @@
       "type": "parallel",
       "description": "Building autonomous agent systems that orchestrate workflows across messaging, scheduling, data pipelines and third-party APIs.",
       "highlights": [
-        "Built omb-agent, a multi-agent orchestration platform (AutoGen, CrewAI, n8n, Dify) that runs my own workflows across messaging, scheduling and data pipelines",
-        "tg-scheduler — Telegram scheduling and automation with Google services",
-        "Docker/k3d infrastructure-as-code for rapid prototyping"
+        "Built omb-agent, a multi-agent platform (LangGraph, RAG, MCP skills) that runs my own workflows across messaging, scheduling and data pipelines",
+        "Telegram assistant and data pipelines: LLM digests, Gmail and Google Photos integrations",
+        "Self-hosted Kubernetes platform with CI/CD, Cloudflare Access and observability"
       ]
     }
   ],
