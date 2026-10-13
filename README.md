@@ -3,11 +3,11 @@
 [![Astro](https://img.shields.io/badge/astro-5.x-purple.svg)](https://astro.build)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
 
-**Personal website — Astro static site for @ExiosV.**
+**Personal website — Astro static site.**
 
 ## Overview
 
-`web-about-me` is a statically-generated personal website built with [Astro](https://astro.build). Serves as the public-facing landing page for the @ExiosV project ecosystem.
+`web-about-me` is a statically-generated personal website built with [Astro](https://astro.build). Personal CV / landing page of Igor Pankin.
 
 ## Quick Start
 
@@ -18,13 +18,10 @@ npm run build    # Build production site to ./dist/
 npm run preview  # Preview production build locally
 ```
 
-## Architecture
+## Hosting
 
-This service is part of the @ExiosV infrastructure:
-
-- **CI/CD:** GitHub → Self-hosted Runner → Infisical → Docker
-- **Deploy:** GitOps — push to `main` triggers redeploy
-- **Repo:** [`vespexx/web-about-me`](https://github.com/vespexx/web-about-me)
+- Published with **GitHub Pages** at <https://cv.igorp.com>: a push to `main` builds the site with GitHub Actions and deploys it.
+- The site is plain static HTML, so it can also be mirrored on a local server as a backup.
 
 ## Learn More
 
