@@ -6,7 +6,7 @@ import projects from '../content/agent-projects.json';
   <div class="container">
     <div class="section-label animate-in">04 / Side projects — AI automation</div>
     <h2 class="section-title animate-in animate-in-delay-1">AI-Agent Automation Projects</h2>
-    <p class="section-subtitle animate-in animate-in-delay-2">Building autonomous agent systems, automation pipelines, and developer tools. Each project is containerized, version-controlled, and designed for real-world use.</p>
+    <p class="section-subtitle animate-in animate-in-delay-2">Building autonomous agent systems, automation pipelines, and developer tools. All four run in production for my own use; the code is in private repositories.</p>
 
     <div class="projects-grid">
       {projects.map((project, i) => (
@@ -18,10 +18,8 @@ import projects from '../content/agent-projects.json';
               </svg>
             </div>
             <div class="project-card__info">
-              <h3 class="project-card__name">
-                <a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a>
-              </h3>
-              <span class="project-card__language">{project.language}</span>
+              <h3 class="project-card__name">{project.name}</h3>
+              <span class="project-card__language">{project.title}</span>
             </div>
           </div>
           <p class="project-card__description">{project.description}</p>
@@ -30,12 +28,16 @@ import projects from '../content/agent-projects.json';
               <li class="project-card__highlight">{h}</li>
             ))}
           </ul>
-          <a href={project.url} target="_blank" rel="noopener noreferrer" class="project-card__link">
-            View on GitHub →
-          </a>
+          <ul class="project-card__stack" aria-label="Technologies">
+            {project.stack.map((t) => (
+              <li class="project-card__chip">{t}</li>
+            ))}
+          </ul>
+          <p class="project-card__shows"><strong>Shows:</strong> {project.shows}</p>
         </article>
       ))}
     </div>
+    <p class="projects-note">Repositories are private; architecture walkthrough and code samples on request.</p>
   </div>
 </section>
 
@@ -117,16 +119,33 @@ import projects from '../content/agent-projects.json';
     color: var(--color-accent);
   }
 
-  .project-card__link {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--color-accent);
-    text-decoration: none;
+  .project-card__stack {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
   }
 
-  .project-card__link:hover {
-    text-decoration: underline;
+  .project-card__chip {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+  }
+
+  .project-card__shows {
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+  }
+
+  .projects-note {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    text-align: center;
   }
 
   @media (max-width: 768px) {
