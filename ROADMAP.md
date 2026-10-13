@@ -10,16 +10,9 @@ This document outlines the tasks, configuration adjustments, and content enhance
 - [x] **LinkedIn Alignment**: Fine-tune the content inside `src/content/work.json` with detailed text about your previous work experience.
 - [ ] **KPI & Achievements**: Update `src/content/achievements.json` with actual measurable results, financial statistics, and ROI from your projects.
 
-## 🛠️ Domain & DNS Configuration (for igorp.com)
-Once you are ready to point your domain `igorp.com` to this new site:
-1. **DNS Setup**: Configure your DNS provider with A records pointing to GitHub Pages IP addresses:
-   - `185.199.108.153`
-   - `185.199.109.153`
-   - `185.199.110.153`
-   - `185.199.111.153`
-2. **Astro Base URL**: Update `astro.config.mjs` to set `site: 'https://igorp.com'` and `base: '/'`.
-3. **CNAME File**: Restore the `CNAME` file in the `public/` directory with `igorp.com` as its content.
-4. **Push changes**: Push the main branch to GitHub, which will deploy the build configured for your custom domain.
+## 🌐 Domain
+- [x] Published on GitHub Pages at `cv.igorp.com` (CNAME in `public/`, deploy by GitHub Actions).
+- [ ] Optional: local backup mirror of the static build.
 
 ## 🎨 Theme & Style Adjustments
 You can switch the primary theme by changing the CSS import in `src/layouts/BaseLayout.astro`:

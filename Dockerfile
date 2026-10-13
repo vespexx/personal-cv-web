@@ -1,5 +1,4 @@
-# Static Astro site served by nginx (unprivileged, port 8080).
-# Backup copy of the site that is primarily published on GitHub Pages (cv.igorp.com), served at the root.
+# Static build served by nginx (optional local mirror of the GitHub Pages site).
 FROM node:22-alpine AS build
 WORKDIR /app
 COPY package.json package-lock.json ./
