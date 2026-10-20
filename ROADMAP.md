@@ -1,14 +1,16 @@
-# ROADMAP — web-about-me
+# ROADMAP — personal-cv-web
 
 This document outlines the tasks, configuration adjustments, and content enhancements planned for your personal single-page presentation site.
 
 ---
 
 ## 📋 Content & Media Enhancements
-- [ ] **Profile Image**: Replace the default inline SVG placeholder in `src/components/Hero.astro` with an `<img>` tag pointing to your real photo (e.g., `/images/profile.jpg`).
-- [ ] **Resume PDF**: Place your actual resume in `public/resume.pdf` to enable the "Download Resume" link.
+- [x] **Profile Image**: real photo in `public/images/profile.jpg`, shown in `src/components/Hero.astro`.
+- [x] **Resume PDF**: `public/resume.pdf` (rebuilt 2026-10-15, header points to cv.igorp.com).
 - [x] **LinkedIn Alignment**: Fine-tune the content inside `src/content/work.json` with detailed text about your previous work experience.
-- [ ] **KPI & Achievements**: Update `src/content/achievements.json` with actual measurable results, financial statistics, and ROI from your projects.
+- [x] **KPI & Achievements**: `src/content/achievements.json` holds portfolio-level figures (no per-project money, no customer names).
+- [x] **Contacts**: WhatsApp and Telegram buttons in hero, contact block and footer.
+- [x] **Projects**: agent and platform projects as ranked cards (`src/content/agent-projects.json`), mirrored in LinkedIn.
 
 ## 🌐 Domain
 - [x] Published on GitHub Pages at `cv.igorp.com` (CNAME in `public/`, deploy by GitHub Actions).
