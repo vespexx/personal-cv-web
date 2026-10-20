@@ -1,4 +1,4 @@
-# web-about-me
+# personal-cv-web
 
 [![Astro](https://img.shields.io/badge/astro-5.x-purple.svg)](https://astro.build)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
@@ -7,7 +7,7 @@
 
 ## Overview
 
-`web-about-me` is a statically-generated personal website built with [Astro](https://astro.build). Personal CV / landing page of Igor Pankin.
+`personal-cv-web` is a statically-generated personal website built with [Astro](https://astro.build). Personal CV / landing page of Igor Pankin.
 
 ## Quick Start
 
