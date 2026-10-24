@@ -22,3 +22,14 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+.env.local
+*.pem
+*.key
+__pycache__/
+*.pyc
+.venv/
+venv/
+Thumbs.db
+*.log
+*.tmp
+*.bak
