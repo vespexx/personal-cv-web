@@ -1,7 +1,7 @@
 {
   "name": "Igor Pankin",
   "headline": "Finance Systems & ERP Product Lead",
-  "tagline": "20 years in financial ERP and FinTech: Oracle E-Business Suite and Oracle ERP Cloud implementation, custom development, SaaS/PaaS and integrations, delivery with P&L ownership — and AI-agent automation on the side.",
+  "tagline": "20 years in financial ERP and FinTech: Oracle E-Business Suite and Oracle Fusion Financials (Oracle ERP Cloud) implementation, custom development, SaaS/PaaS and integrations, delivery with P&L ownership — with AI agents in the delivery routine.",
   "location": "Limassol, Cyprus",
   "email": "igor@igorp.com",
   "linkedin": "https://www.linkedin.com/in/igorpankin/",
@@ -28,9 +28,10 @@
       "description": "Formal title: Lead Consultant. Delivery and P&L ownership for financial ERP projects and for in-house products taken to customers. Customers by request.",
       "highlights": [
         "Delivered a portfolio of 6 projects (2014–2025): over €4.5M revenue and about €1.4M profit, ROI above 30%; own scope, budget, team and P&L",
-        "Led the migration of a large enterprise's financial ERP platform (applications, integrations, reports, data) with no interruption to financial close; implemented financial and tax modules for an industrial customer",
-        "Supported sales of large telecom, chemicals, energy and mining deals: proposals, estimates, sales materials",
-        "Automated IFRS and management P&L reporting for group finance"
+        "Led the two-year migration (2023–2025) of a large enterprise's financial ERP platform (applications, integrations, reports, data; hundreds of finance users) with no interruption to financial close; joint team of up to 20 consultants and 20–30 customer staff; project manager and functional architect (P2P, O2C)",
+        "Implemented 5 finance and tax areas for an industrial customer over 2021–2024 (cash management, fixed assets, Russian tax, EDI and bank-statement integration) and trained its key users",
+        "Supported 5 large pre-sales in 2025–2026 (telecom, chemicals, energy, mining): proposals, estimates, an IT-audit bid and sales materials",
+        "Automated 3 reporting streams for group finance in 2026 (IFRS, cash cycle, management P&L); developing AI-assisted workflows for ERP delivery"
       ]
     },
     {
@@ -41,7 +42,7 @@
       "type": "work",
       "description": "Formal title: Senior Consultant (Lead Consultant from 2021). Project management and product ownership for Oracle ERP financial solutions as an Oracle Platinum partner.",
       "highlights": [
-        "Delivered an Oracle ERP Cloud implementation for a major enterprise customer alongside its international head-office team and a global integrator",
+        "Delivered an Oracle Fusion Financials (Oracle ERP Cloud) implementation for a major enterprise (three waves, go-live within 12 months, hypercare) alongside its international head-office team and a global integrator; product owner of a PaaS reporting service",
         "Built a SaaS product from scratch as an extension of Oracle ERP and took it to customers",
         "Developed and distributed the official Oracle localisation solution for Russia",
         "Ran a multi-year PaaS-based support contract for a large customer"
@@ -55,7 +56,7 @@
       "type": "work",
       "description": "Development, enhancement and functional support of financial ERP applications for global industrial and retail customers (names by request).",
       "highlights": [
-        "Owned functional design and development of financial modules, reports and localisation features for global industrial and retail customers; kept one retail ERP customer for 10+ years"
+        "Owned functional design and development of financial modules, reports and localisation features for global industrial and retail customers"
       ]
     },
     {
@@ -64,9 +65,9 @@
       "company": "Softline Group (Borlas Group)",
       "period": "2010 — 2013",
       "type": "work",
-      "description": "Custom financial software development and implementation of Treasury applications for energy, chemicals and utilities customers. Part of IBS Group (IBS Borlas practice) until 2012.",
+      "description": "Custom financial software development for energy retail, utilities and logistics customers.",
       "highlights": [
-        "Delivered Treasury applications for energy, chemicals and utilities customers, with business process improvement"
+        "Delivered 3 systems in three years: two request-payment (treasury) systems and a forwarding-management system integrated with CRM, transport management and 1C"
       ]
     },
     {
@@ -75,7 +76,7 @@
       "company": "GMCS ltd.",
       "period": "2006 — 2009",
       "type": "work",
-      "description": "Oracle E-Business Suite financials implementation in one of the biggest projects in Russia, for a state telecom holding; also GL, budgeting, cash flow and treasury modules for large telecom operators.",
+      "description": "Oracle E-Business Suite financials implementation for a state telecom holding (the project went live on time).",
       "highlights": [
         "Took part in the Oracle EBS financials implementation (GL, CE, TR, AP) for a state telecom holding; project went live on time",
         "Wrote functional designs, tested modules, trained junior consultants and key users"
@@ -87,7 +88,7 @@
       "company": "Side projects & Open Source",
       "period": "2020 — Present",
       "type": "parallel",
-      "description": "Building autonomous agent systems that orchestrate workflows across messaging, scheduling, data pipelines and third-party APIs.",
+      "description": "Own AI-agent and automation projects, all running in production; used in the daily delivery routine, not only as a demonstration of technology.",
       "highlights": [
         "Built omb-agent, a multi-agent platform (LangGraph, RAG, MCP skills) that runs my own workflows across messaging, scheduling and data pipelines",
         "Telegram assistant and data pipelines: LLM digests, Gmail and Google Photos integrations",
