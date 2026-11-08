@@ -1,7 +1,7 @@
 {
   "name": "Igor Pankin",
   "headline": "Finance Systems & ERP Product Lead",
-  "tagline": "20 years in financial ERP and FinTech: Oracle E-Business Suite and Oracle Fusion Financials (Oracle ERP Cloud) implementation, custom development, SaaS/PaaS and integrations, delivery with P&L ownership — plus production AI: multi-agent orchestration across the delivery cycle and cost-efficient AI practices.",
+  "tagline": "20 years in financial ERP and FinTech: Oracle E-Business Suite and Oracle Fusion Financials (Oracle ERP Cloud) implementation, custom development, SaaS/PaaS and integrations, delivery with P&L ownership — plus hands-on AI: multi-agent orchestration for ERP delivery and a self-hosted agent platform.",
   "location": "Limassol, Cyprus",
   "email": "igor@igorp.com",
   "linkedin": "https://www.linkedin.com/in/igorpankin/",
@@ -31,7 +31,7 @@
         "Delivered a portfolio of 6 projects (2014–2025): over €4.5M revenue and about €1.4M profit, ROI above 30%; own scope, budget, team and P&L",
         "Led the two-year migration (2023–2025) of a large enterprise's financial ERP platform (applications, integrations, reports, data; hundreds of finance users) with no interruption to financial close; joint team of up to 20 consultants and 20–30 customer staff; project manager and functional architect (P2P, O2C)",
         "Implemented 5 finance and tax areas for an industrial customer over 2021–2024 (cash management, fixed assets, Russian tax, EDI and bank-statement integration) and trained its key users",
-        "Built AI-agent tooling for an ERP discovery phase (2026): daily consolidation of consultants' documents and interview transcripts, progress reporting for the PM",
+        "Built AI-agent tooling for an ERP discovery phase (2026): daily consolidation of consultants' documents and interview transcripts, progress reporting for the project manager",
         "Supported 5 large pre-sales in 2025–2026 (telecom, chemicals, energy, mining): proposals, estimates, an IT-audit bid and sales materials",
         "Automated 3 reporting streams for group finance in 2026 (IFRS, cash cycle, management P&L); developing AI-assisted workflows for ERP delivery"
       ]
