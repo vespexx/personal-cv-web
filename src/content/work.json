@@ -1,7 +1,7 @@
 {
   "name": "Igor Pankin",
   "headline": "Finance Systems & ERP Product Lead",
-  "tagline": "20 years in financial ERP and FinTech: Oracle E-Business Suite and Oracle ERP Cloud implementation, custom development, SaaS/PaaS and integrations, delivery with P&L ownership — and AI-agent automation on the side.",
+  "tagline": "20 years in financial ERP and FinTech: Oracle E-Business Suite and Oracle ERP Cloud implementation, custom development, SaaS/PaaS and integrations, delivery with P&L ownership — plus production AI: multi-agent orchestration across the delivery cycle and cost-efficient AI practices.",
   "location": "Limassol, Cyprus",
   "email": "igor@igorp.com",
   "linkedin": "https://www.linkedin.com/in/igorpankin/",
@@ -16,6 +16,7 @@
     "Finance Systems & ERP Product Lead",
     "Project Delivery Manager",
     "Oracle ERP Specialist",
+    "AI-Powered Delivery",
     "Agent-Driven Development"
   ],
   "experience": [
@@ -29,6 +30,7 @@
       "highlights": [
         "Delivered a portfolio of 6 projects (2014–2025): over €4.5M revenue and about €1.4M profit, ROI above 30%; own scope, budget, team and P&L",
         "Led the migration of a large enterprise's financial ERP platform (applications, integrations, reports, data) with no interruption to financial close; implemented financial and tax modules for an industrial customer",
+        "Built AI-agent tooling for an ERP discovery phase (2026): daily consolidation of consultants' documents and interview transcripts, progress reporting for the PM",
         "Supported sales of large telecom, chemicals, energy and mining deals: proposals, estimates, sales materials",
         "Automated IFRS and management P&L reporting for group finance"
       ]
